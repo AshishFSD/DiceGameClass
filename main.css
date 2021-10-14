@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+:root {
+
+      --bg-mobile:#e1f1f6;
+      --main-blue:#81c3f5;
+      --main-green:#34A853;
+      --main-yellow:#FBBC05;
+      --main-black:#3b3a30;
+
+
+}
+
+
+
+*{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      font-family:'Ubuntu', sans-serif;
+     
+}
+
+
+body {
+      background-color: #D9AFD9;
+      background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+}
+
+
+/*****=====Uerinput layought desktop****======*/
+
+.container{
+
+      width: 50vw;
+      height: 70vh;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin:  25vh  auto;
+      display: flex;
+      background-color: #fff;
+
+
+}
+
+.container .left{
+      background-color: var(--main-blue);
+      width: 50%;
+      position: relative;
+}
+.container .left .fas{
+      position: absolute;
+      top:40%;
+      right: 40%;
+      font-size: 5rem;
+      color: #fff;
+}
+
+.container .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      row-gap: 10px;
+}
+
+.right-icon{
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      width: 80%;
+      gap: 20px;
+}
+
+
+
+.input-container{
+      display: flex;
+      gap: 10px;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--main-blue);
+      border-radius: 5px;
+      background-color:var(--main-blue);
+      
+}
+
+ .input-container input {
+      width: 100%;
+      height: 2rem;
+      border-radius: 0  5px 5px 0;
+      border: none;
+      overflow: hidden;
+      background-color: #000;
+     
+}
+
+.input-container input:focus{
+      border-style: none;
+      outline: none;
+      background-color: #55ACEE;
+      
+
+}
+
+.input-container input {
+      color: white;
+      font-weight: 100;
+      text-align: center;
+}
+
+
+ .right .right-icon .fas {
+  color:var(--main-blue);
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.input-container .fas  {
+      color: #fff;
+      font-size: 2rem;
+}
+
+.right input[type="submit"] {
+      background-color: var(--main-blue);
+      color: #fff;
+      border:none;
+      padding: 12px;
+      font-weight:bolder;
+      border-radius: .5rem;
+      width: 80%;
+}
+
+.right input[type="submit"]:hover {
+      background-color: var(--main-black);
+      transition:   background-color 2s linear 1s;}
+      
+
+
+::placeholder {
+      color: var(--main-blue);
+      text-align: center;
+}
+
+
+
+/*** === player dasbord CSS  ====****/
+
+.left-one{
+   
+     background-color:rgb(224, 224, 194); 
+     box-shadow:2px 0 rgb(224, 224,194) ; 
+     
+} 
+
+
+
+.container .left-one .fas, 
+.container .right-two .fas {
+    font-size:5rem;   
+    margin: 20px 0;
+}
+    
+h2 {
+      font-size: 3rem;
+}
+
+.roll{
+      width: 10rem;
+      height: 2.5rem;
+      border:none;
+      font-weight: bolder;
+}
+
+.roll:hover{
+      background-color: #D9AFD9;
+      background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+       color: #fff;
+}
+
+.container .left-one,.right-two { 
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      width: 50%;
+      justify-content: space-around;
+      align-items: center;     
+    
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=== footer css  =====*/
+
+footer{
+  height:5rem;
+  background-color: #D6D5B9;
+  text-align: center; 
+  font-size: 20px;
+  line-height: 4;
+  border-top: 5px solid #D2B4DA ;
+      
+}
+
+
+
+
+
+
+/*** Mobile device CSS ****/
+
+@media screen and (max-width: 600px) {
+        .container{
+            
+            width: 80vh;
+            height: 80vh;
+            margin: 0;
+            background-color: var(--bg-mobile);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            flex-direction: row;
+
+
+        }
+        .container .left {
+              display: none;
+              width: 100%;
+             
+        }
+
+        .container .right {
+              width: 100%;
+              gap:20px;
+        }
+
+        .right .input-container input{
+              width: 100%;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
