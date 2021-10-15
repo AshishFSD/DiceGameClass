@@ -1,12 +1,14 @@
 
+const formData = document.getElementsByTagName("input");
 
 let PlayerOne = "";
 let PlayerTwo = "";
 let PlayerOneScore = 0;
 let PlayerTwoScore = 0;
-let totalScore = 0;
+let totalScore = formData[2].value;
 
-const formData = document.getElementsByTagName("input");
+console.log(totalScore)
+
 
 
 /****** from fucntion */
@@ -39,9 +41,11 @@ function ranDomNum() {
 
 function diceRoll() {
       let num = ranDomNum();
+      let image1 = document.querySelectorAll("img")[0];
+      randomImage = "image/" + "dice" + num + ".png"
       PlayerOneScore += num;
       document.getElementsByClassName("playerScore")[0].innerHTML = PlayerOneScore;
-      document.getElementsByClassName("playerScore")[0].disabled = true;
+      image1.setAttribute("src", randomImage)
 
 
 
@@ -50,11 +54,11 @@ function diceRoll() {
 
 function diceRoll2() {
       let num = ranDomNum();
-      PlayerOneScore += num;
-      document.getElementsByClassName("playerScore")[1].innerHTML = PlayerOneScore;
-
-
-
+      let image1 = document.querySelectorAll("img")[1];
+      randomImage = "image/" + "dice" + num + ".png"
+      PlayerTwoScore += num;
+      document.getElementsByClassName("playerScore")[1].innerHTML = PlayerTwoScore;
+      image1.setAttribute("src", randomImage)
 
 
 }
