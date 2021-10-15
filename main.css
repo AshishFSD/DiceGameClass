@@ -29,7 +29,7 @@ body {
 
 /*****=====Uerinput layought desktop****======*/
 
-.container{
+.container , .container-player{
 
       width: 50vw;
       height: 70vh;
@@ -54,13 +54,19 @@ body {
       color:var(--main-black);
 }
 
-.container .right {
+.container .from-data {
+      width: 50%;
+      
+}
+
+.container .from-data .right {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 50%;
+      width: 100%;
       row-gap: 10px;
+      margin-top: 30px;
 }
 
 .right-icon{
@@ -143,9 +149,13 @@ body {
 ::placeholder {
       color: #000;
       text-align:center;
-      font-weight: 300;
-      font-weight: bold;
+     
 }
+
+#container-player{
+      display: none;
+}
+
 
 
 
@@ -166,7 +176,7 @@ body {
     margin: 20px 0;
 }
     
-h2 {
+.playerName, .playerScore{
       font-size: 3rem;
 }
 

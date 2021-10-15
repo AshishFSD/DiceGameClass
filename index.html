@@ -19,53 +19,57 @@
 
       <!---- Uerinput layought-->
 
-      <div class="container">
+      <div class="container" id="player-from">
 
             <div class="left">
 
                   <i class="fas fa-dice-d6"></i>
             </div>
-            <div class="right">
-                  <div class="right-icon">
-                        <h1> Please Enter Game Details
-                        </h1>
-                        <i class="fas fa-dice"></i>
+
+            <form class="from-data" onsubmit="onSubmit(event)">
+                  <div class="right">
+                        <div class="right-icon">
+                              <h1> Please Enter Game Details
+                              </h1>
+                              <i class="fas fa-dice"></i>
+
+                        </div>
+                        <div class="input-container">
+                              <i class="fas fa-user"></i>
+                              <input type="text" name="firt-player" placeholder="Enter Player 1 Name" required>
+                        </div>
+                        <div class="input-container">
+                              <i class="fas fa-user"></i>
+                              <input type="text" name="2nd-player" placeholder="Enter Player 2 Name" required>
+                        </div>
+
+                        <div class="input-container">
+                              <i class="fas fa-angle-double-right"></i>
+                              <input type="number" placeholder=" Enter Total Score" min="10" max="100" required>
+
+                        </div>
+
+                        <input type="submit" value="Start The Game">
 
                   </div>
-                  <div class="input-container">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="firt-player" placeholder="Enter Player 1 Name" required>
-                  </div>
-                  <div class="input-container">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="2nd-player" placeholder="Enter Player 2 Name" required>
-                  </div>
-
-                  <div class="input-container">
-                        <i class="fas fa-angle-double-right"></i>
-                        <input type="number" placeholder=" Enter Total Score" min="10" max="100" required>
-
-                  </div>
-
-                  <input type="submit" value="Start The Game">
-
-            </div>
+            </form>
 
       </div>
 
 
 
-      <!--   <div class="container">
+
+      <div class="container" id="container-player">
             <div class="left-one">
                   <div class="playerName">
-                        <h2>A</h2>
+                        A
                   </div>
-                  <div class="playerNameScore">
-                        <h2>30</h2>
+                  <div class="playerScore">
+                        30
                   </div>
-                  <i class="fas fa-dice-two"></i>
+                  <i class="fas fa-dice-two dice"></i>
 
-                  <button class="roll"> Roll Dice </button>
+                  <button class="roll" onclick="diceRoll()" id="roll-firt"> Roll Dice </button>
 
 
             </div>
@@ -74,25 +78,24 @@
             <div class="right-two">
 
                   <div class="playerName">
-                        <h2>B</h2>
+                        B
                   </div>
-                  <div class="playerNameScore">
-                        <h2>30</h2>
+                  <div class="playerScore">
+                        =30
                   </div>
-                  <i class="fas fa-dice-three"></i>
-
-                  <button class="roll"> Roll Dice </button>
+                  <i class="fas fa-dice-three dice "></i>
+                  <button class="roll" onclick="diceRoll2()"> Roll Dice </button>
 
 
 
             </div>
 
-      </div>   -->
+      </div>
 
 
-
+      <script src="main.js"></script>
       <footer>
-            <p> Designed By Ashish Kumar</p>
+            <p> Designed by Ashish Kumar</p>
       </footer>
 
 </body>
