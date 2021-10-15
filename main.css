@@ -266,6 +266,13 @@ footer{
               width: 100%;
         }
 
+        /**===== mobile player layought ========*/
+
+        .left-one ,.right-two {
+
+            width: 40%;
+        }
+
     }
 
 
