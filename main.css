@@ -3,9 +3,7 @@
 :root {
 
       --bg-mobile:#e1f1f6;
-      --main-blue:#81c3f5;
-      --main-green:#34A853;
-      --main-yellow:#FBBC05;
+      --main-blue:#C6BBDB;
       --main-black:#3b3a30;
 
 
@@ -53,7 +51,7 @@ body {
       top:40%;
       right: 40%;
       font-size: 5rem;
-      color: #fff;
+      color:var(--main-black);
 }
 
 .container .right {
@@ -68,12 +66,14 @@ body {
 .right-icon{
       display: flex;
       flex-direction: column;
-      
       align-items: center;
       width: 80%;
       gap: 20px;
 }
 
+.right-icon .fas , h1 {
+      color: #9cd6e1;
+}
 
 
 .input-container{
@@ -84,7 +84,7 @@ body {
       align-items: center;
       border: 1px solid var(--main-blue);
       border-radius: 5px;
-      background-color:var(--main-blue);
+      background-color:#9cd6e1;;
       
 }
 
@@ -94,27 +94,27 @@ body {
       border-radius: 0  5px 5px 0;
       border: none;
       overflow: hidden;
-      background-color: #000;
+ 
      
 }
 
 .input-container input:focus{
-      border-style: none;
       outline: none;
-      background-color: #55ACEE;
+      background-color: #e2e2e2;
+      border: 1xp solid #9cd6e1;
       
 
 }
 
 .input-container input {
-      color: white;
+      color: #9cd6e1;;
       font-weight: 100;
       text-align: center;
 }
 
 
  .right .right-icon .fas {
-  color:var(--main-blue);
+  color:#9cd6e1;
   font-size: 50px;
   margin-bottom: 25px;
 }
@@ -125,7 +125,7 @@ body {
 }
 
 .right input[type="submit"] {
-      background-color: var(--main-blue);
+     background-color:#9cd6e1;
       color: #fff;
       border:none;
       padding: 12px;
@@ -141,8 +141,10 @@ body {
 
 
 ::placeholder {
-      color: var(--main-blue);
-      text-align: center;
+      color: #000;
+      text-align:center;
+      font-weight: 300;
+      font-weight: bold;
 }
 
 
