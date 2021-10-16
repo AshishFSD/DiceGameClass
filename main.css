@@ -252,32 +252,32 @@ footer{
 
 @media screen and (max-width: 600px) {
         .container{
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             margin: 0;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             flex-direction: row;
+            margin: 0 auto;
 
 
         }
         .container .left {
               display: none;
-              width: 100%;
+             
              
          }
 
-        .container .right {
-              width: 100%;
-              gap:20px;
+         .container .from-data{
+               width: 100%;
+         }
+        .container .right{
+              width: 80%;
+              
         }
-
-        .right .input-container input{
-              width: 100%;
-        }
+        
 
         /**===== mobile player layought ========*/
 
-        .left-one ,.right-two {
+        .left-one .right-two {
 
             width: 40%;
         }
