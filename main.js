@@ -61,7 +61,7 @@ function diceRoll() {
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementsByClassName("diceimage")[0].src = "image/winner.gif";
             document.getElementsByClassName("diceimage")[0].classList.add("win-left");
-            document.getElementById("winner-container").style.display = "";
+
 
 
       }
@@ -90,7 +90,7 @@ function diceRoll2() {
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementsByClassName("diceimage")[1].src = "image/winner.gif";
             document.getElementsByClassName("diceimage")[1].classList.add("win-right");
-            document.getElementById("winner-container").style.display = "";
+
 
 
       };
