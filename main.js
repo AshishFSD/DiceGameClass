@@ -1,5 +1,5 @@
 
-const formData = document.getElementsByTagName("input");
+
 
 let PlayerOne = "";
 let PlayerTwo = "";
@@ -11,6 +11,7 @@ let totalScore = 0;
 
 function onSubmit(event) {
       event.preventDefault();
+      const formData = document.getElementsByTagName("input");
       let PlayerOne = formData[0].value;
       let PlayerTwo = formData[1].value;
       totalScore = formData[2].value;
@@ -61,6 +62,7 @@ function diceRoll() {
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementsByClassName("diceimage")[0].src = "image/winner.gif";
             document.getElementsByClassName("diceimage")[0].classList.add("win-left");
+            document.getElementById("winner-container").style.display = "flex";
 
 
 
@@ -90,6 +92,8 @@ function diceRoll2() {
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementsByClassName("diceimage")[1].src = "image/winner.gif";
             document.getElementsByClassName("diceimage")[1].classList.add("win-right");
+            document.getElementById("winner-container").style.display = "flex"
+
 
 
 
@@ -99,7 +103,6 @@ function diceRoll2() {
 }
 
 
-console.log(PlayerOneScore)
 
 /**=== Re-start with same player */
 
@@ -120,6 +123,7 @@ function playSamePlayer() {
       document.getElementById("roll-second").disabled = false;
       document.getElementById("roll-firt").style.cursor = "pointer";
       document.getElementById("roll-second").style.cursor = "pointer";
+      document.getElementById("winner-container").style.display = "none";
 
 }
 
@@ -127,6 +131,17 @@ function playSamePlayer() {
 /**=== Re-start with New player */
 
 function playNewPlayer() {
+      playSamePlayer();
       document.getElementById("player-from").style.display = "";
       document.getElementById("container-player").style.display = "none";
+      document.getElementById("winner-container").style.display = "none";
+
+
+
+}
+
+
+function same() {
+
+      document.getElementById("winner-container").style.display = "none";
 }
