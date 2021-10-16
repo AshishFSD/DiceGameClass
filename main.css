@@ -273,7 +273,24 @@ footer{
               width: 80%;
               
         }
-        
+
+
+        .input-container input{
+            height: 2.5rem;
+
+        }
+
+        .right input[type="submit"] {
+            background-color:#000;
+             color: #fff;
+             border:none;
+             padding: 12px;
+             font-weight:bolder;
+             border-radius: .5rem;
+             width: 80%;
+             height: 3rem;
+            margin-top: 5rem;
+       }
 
         /**===== mobile player layought ========*/
 
