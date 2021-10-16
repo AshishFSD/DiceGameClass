@@ -24,9 +24,6 @@ function onSubmit(event) {
       document.getElementsByClassName("playerScore")[1].innerHTML = PlayerTwoScore;
       document.getElementsByClassName("totalScore")[2].value = totalScore;
 
-
-
-
 }
 
 
@@ -35,6 +32,8 @@ function onSubmit(event) {
 function ranDomNum() {
       return Math.floor(Math.random() * 6) + 1;
 }
+
+
 
 
 
@@ -48,13 +47,26 @@ function diceRoll() {
       PlayerOneScore += num;  // updating player score 
       document.getElementsByClassName("playerScore")[0].innerHTML = PlayerOneScore;
       image1.setAttribute("src", randomImage)
+
       document.getElementById("roll-firt").disabled = true;
       document.getElementById("roll-second").disabled = false;
+
+
       document.getElementById("roll-firt").style.cursor = "not-allowed";
       document.getElementById("roll-second").style.cursor = "pointer";
       document.getElementById("roll-firt").style.background = "#CFB5DA";
       document.getElementById("roll-second").style.background = "#9C060C";
-      winner()
+      if (totalScore <= PlayerOneScore) {
+            document.getElementById("roll-second").disabled = true;
+            document.getElementById("roll-second").disabled = true;
+            document.getElementById("roll-firt").style.cssText = "background:#CFB5DA; cursor:not-allowed";
+            document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
+            document.getElementsByClassName("diceimage")[0].src = "hackanm.gif";
+            {
+
+            }
+
+      }
 
 
 }
@@ -68,11 +80,17 @@ function diceRoll2() {
       image1.setAttribute("src", randomImage)
       document.getElementById("roll-second").disabled = true
       document.getElementById("roll-firt").disabled = false;
+
       document.getElementById("roll-firt").style.cursor = "pointer";
       document.getElementById("roll-second").style.cursor = "not-allowed";
       document.getElementById("roll-second").style.background = "#CFB5DA";
       document.getElementById("roll-firt").style.background = "#9C060C";
-      winner()
+      if (totalScore <= PlayerTwoScore) {
+            document.getElementById("roll-second").disabled = true;
+            document.getElementById("roll-second").disabled = true;
+            document.getElementById("roll-firt").style.cssText = "background:#CFB5DA; cursor:not-allowed";
+            document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
+      };
 
 
 }
@@ -81,7 +99,7 @@ function diceRoll2() {
 
 /** winner logic */
 
-
+/*
 function winner() {
       if (totalScore <= PlayerOneScore || totalScore <= PlayerTwoScore) {
             document.getElementById("roll-second").disabled = true;
@@ -92,3 +110,6 @@ function winner() {
       }
 
 }
+ */
+/** == winner massage */
+
