@@ -34,7 +34,7 @@ body {
       width: 50vw;
       height: 70vh;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      margin:  25vh  auto;
+      margin:  5vh  auto 2vh auto;
       display: flex;
       background-color: #fff;
 
@@ -230,6 +230,33 @@ body {
 }
 
 
+
+
+/**** Game resater css ***/
+
+.winner-container{
+      width: 50vw;
+      height: 20vh;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      display: flex;
+      background-color: #fff;
+      margin: 0 auto;
+      border-radius: 5px;
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+     
+}
+
+.winner-container button{
+      width: 30%;
+      height: 40%;
+      background-color: #9C060C;
+      color: #fff;
+      border: none;
+      border-radius: 1rem;
+}
+
  
 
 
@@ -261,7 +288,7 @@ body {
 /*=== footer css  =====*/
 
 footer{
-  height:4rem;
+  height:8vh;
   background-color: #9C060C;
   text-align: center; 
   font-size: 20px;

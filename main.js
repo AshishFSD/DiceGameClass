@@ -7,8 +7,6 @@ let PlayerOneScore = 0;
 let PlayerTwoScore = 0;
 let totalScore = 0;
 
-
-
 /****** from fucntion */
 
 function onSubmit(event) {
@@ -63,6 +61,7 @@ function diceRoll() {
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementsByClassName("diceimage")[0].src = "image/winner.gif";
             document.getElementsByClassName("diceimage")[0].classList.add("win-left");
+            document.getElementById("winner-container").style.display = "";
 
 
       }
@@ -80,7 +79,6 @@ function diceRoll2() {
       image1.setAttribute("src", randomImage)
       document.getElementById("roll-second").disabled = true
       document.getElementById("roll-firt").disabled = false;
-
       document.getElementById("roll-firt").style.cursor = "pointer";
       document.getElementById("roll-second").style.cursor = "not-allowed";
       document.getElementById("roll-second").style.background = "#CFB5DA";
@@ -92,6 +90,7 @@ function diceRoll2() {
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementsByClassName("diceimage")[1].src = "image/winner.gif";
             document.getElementsByClassName("diceimage")[1].classList.add("win-right");
+            document.getElementById("winner-container").style.display = "";
 
 
       };
@@ -100,20 +99,34 @@ function diceRoll2() {
 }
 
 
+console.log(PlayerOneScore)
 
-/** winner logic */
+/**=== Re-start with same player */
 
-/*
-function winner() {
-      if (totalScore <= PlayerOneScore || totalScore <= PlayerTwoScore) {
-            document.getElementById("roll-second").disabled = true;
-            document.getElementById("roll-second").disabled = true;
-            document.getElementById("roll-firt").style.cssText = "background:#CFB5DA; cursor:not-allowed";
-            document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
+function playSamePlayer() {
+      PlayerOneScore = 0;
+      PlayerTwoScore = 0;
+      document.getElementsByClassName("playerScore")[0].innerHTML = PlayerOneScore;
+      document.getElementsByClassName("playerScore")[1].innerHTML = PlayerTwoScore;
 
-      }
+      document.getElementsByClassName("diceimage")[0].src = "image/dice1.png";
+      document.getElementsByClassName("diceimage")[1].src = "image/dice1.png";
+
+      document.getElementsByClassName("diceimage")[0].classList.remove("win-left");
+      document.getElementsByClassName("diceimage")[1].classList.remove("win-right");
+      document.getElementById("roll-firt").style.background = "#9C060C";
+      document.getElementById("roll-second").style.background = "#9C060C";
+      document.getElementById("roll-firt").disabled = false; //
+      document.getElementById("roll-second").disabled = false;
+      document.getElementById("roll-firt").style.cursor = "pointer";
+      document.getElementById("roll-second").style.cursor = "pointer";
 
 }
- */
-/** == winner massage */
 
+
+/**=== Re-start with New player */
+
+function playNewPlayer() {
+      document.getElementById("player-from").style.display = "";
+      document.getElementById("container-player").style.display = "none";
+}
