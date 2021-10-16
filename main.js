@@ -25,6 +25,7 @@ function onSubmit(event) {
       document.getElementsByClassName("playerScore")[0].innerHTML = PlayerOneScore;
       document.getElementsByClassName("playerScore")[1].innerHTML = PlayerTwoScore;
 
+
 }
 
 
@@ -46,6 +47,13 @@ function diceRoll() {
       PlayerOneScore += num;
       document.getElementsByClassName("playerScore")[0].innerHTML = PlayerOneScore;
       image1.setAttribute("src", randomImage)
+      document.getElementById("roll-firt").disabled = true;
+      document.getElementById("roll-second").disabled = false;
+      document.getElementById("roll-firt").style.cursor = "not-allowed";
+
+      document.getElementById("roll-second").style.cursor = "pointer";
+      document.getElementById("roll-firt").style.background = "#CFB5DA";
+      document.getElementById("roll-second").style.background = "#9C060C";
 
 
 
@@ -59,6 +67,13 @@ function diceRoll2() {
       PlayerTwoScore += num;
       document.getElementsByClassName("playerScore")[1].innerHTML = PlayerTwoScore;
       image1.setAttribute("src", randomImage)
+      document.getElementById("roll-second").disabled = true
+      document.getElementById("roll-firt").disabled = false;
+      document.getElementById("roll-firt").style.cursor = "pointer";
+      document.getElementById("roll-second").style.cursor = "not-allowed";
+
+      document.getElementById("roll-second").style.background = "#CFB5DA";
+      document.getElementById("roll-firt").style.background = "#9C060C";
 
 
 }

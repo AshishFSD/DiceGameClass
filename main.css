@@ -187,6 +187,7 @@ body {
       background-color: #9C060C;
       color: #fff;
       border-radius: 1rem;
+      cursor: pointer;
 }
 
 .roll:hover{
