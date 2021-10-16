@@ -212,6 +212,7 @@ body {
       min-height: 60%;
       z-index: 1;
       opacity: 0.5;
+      
 }
 
 .win-right{
@@ -301,8 +302,8 @@ footer{
 
 @media screen and (max-width: 600px) {
         .container{
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             margin: 0;
             flex-direction: row;
             margin: 0 auto;
@@ -376,10 +377,7 @@ footer{
               margin-top: 2%;
         }
 
-        .footer{
-              width: 100%;
-              height: 40%;
-        }
+        
     }
 
 
