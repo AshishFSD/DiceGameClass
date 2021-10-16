@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 :root {
 
       --bg-mobile:#e1f1f6;
@@ -12,7 +11,7 @@
       margin: 0;
       padding: 0;
       text-decoration: none;
-      font-family:'Ubuntu', sans-serif; 
+      font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -110,9 +109,10 @@ body {
 }
 
 .input-container input {
-      color: #9cd6e1;;
-      font-weight: 100;
+      color: #9cd6e1;
       text-align: center;
+      font-weight: bold;
+      letter-spacing:1.5px;
 }
 
 
@@ -135,17 +135,19 @@ body {
       font-weight:bolder;
       border-radius: .5rem;
       width: 80%;
+      cursor: pointer;
 }
 
-.right input[type="submit"]:hover {
-      background-color: var(--main-black);
-      transition:   background-color 2s linear 1s;}
-      
+.right input[type="submit"]:hover{
+      background-color:#F3B0B3      ;
+}
+
 
 
 ::placeholder {
-      color: #000;
+      color: rgb(172, 167, 167);
       text-align:center;
+      font-weight: normal;
      
 }
 
@@ -164,6 +166,12 @@ body {
      box-shadow:2px 0 rgb(224, 224,194) ; 
      position: relative;
 } 
+
+.left-one .playerName,
+.right-two .playerName{
+   color: #9C060C;
+   text-transform: uppercase;
+}
 
 
 
@@ -249,9 +257,12 @@ body {
       color: #fff;
       border: none;
       border-radius: 1rem;
+      cursor: pointer;
 }
 
- 
+.winner-container button:hover{
+      background-color: #CFB5DA;
+}
 
 
 
