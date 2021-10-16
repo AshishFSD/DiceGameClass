@@ -126,13 +126,4 @@ function playSamePlayer() {
 
 /**=== Re-start with New player */
 
-function playNewPlayer() {
-      playSamePlayer();
-      document.getElementById("player-from").style.display = "";
-      document.getElementById("container-player").style.display = "none";
-      document.getElementById("winner-container").style.display = "none";
-
-
-
-}
 
