@@ -3,7 +3,7 @@
 :root {
 
       --bg-mobile:#e1f1f6;
-      --main-blue:#C6BBDB;
+      --main-blue:#9C060C;
       --main-black:#3b3a30;
 
 
@@ -51,7 +51,7 @@ body {
       top:40%;
       right: 40%;
       font-size: 5rem;
-      color:var(--main-black);
+      color:#fff;
 }
 
 .container .from-data {
@@ -184,12 +184,13 @@ body {
       height: 2.5rem;
       border:none;
       font-weight: bolder;
+      background-color: #9C060C;
+      color: #fff;
+      border-radius: 1rem;
 }
 
 .roll:hover{
-      background-color: #D9AFD9;
-      background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-       color: #fff;
+      background-color: #9e373a;      color: #fff;
 }
 
 .container .left-one,.right-two { 
@@ -234,12 +235,12 @@ body {
 /*=== footer css  =====*/
 
 footer{
-  height:5rem;
-  background-color: #D6D5B9;
+  height:4rem;
+  background-color: #9C060C;
   text-align: center; 
   font-size: 20px;
   line-height: 4;
-  border-top: 5px solid #D2B4DA ;
+  color: #fff;
       
 }
 
@@ -294,10 +295,26 @@ footer{
 
         /**===== mobile player layought ========*/
 
-        .left-one .right-two {
+         .mobile-container{
 
-            width: 40%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+         }
+
+         .container .left-one ,.right-two {
+            width: 100%;
+            display: flex;
+            gap: 10%;
+            height: 50vh;
         }
+        .roll{
+              background-color:#9C060C;
+              border: none;
+              color: #fff;
+              border-radius: 1rem;
+        }
+
         .diceimage{
               max-width: 5rem;
               max-height: 5rem;
