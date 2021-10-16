@@ -61,12 +61,12 @@ function diceRoll() {
             document.getElementById("roll-second").disabled = true;
             document.getElementById("roll-firt").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
-            document.getElementsByClassName("diceimage")[0].src = "hackanm.gif";
-            {
+            document.getElementsByClassName("diceimage")[0].src = "image/winner.gif";
+            document.getElementsByClassName("diceimage")[0].classList.add("win-left");
 
-            }
 
       }
+
 
 
 }
@@ -86,10 +86,14 @@ function diceRoll2() {
       document.getElementById("roll-second").style.background = "#CFB5DA";
       document.getElementById("roll-firt").style.background = "#9C060C";
       if (totalScore <= PlayerTwoScore) {
-            document.getElementById("roll-second").disabled = true;
+            document.getElementById("roll-firt").disabled = true; //
             document.getElementById("roll-second").disabled = true;
             document.getElementById("roll-firt").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
+            document.getElementsByClassName("diceimage")[1].src = "image/winner.gif";
+            document.getElementsByClassName("diceimage")[1].classList.add("win-right");
+
+
       };
 
 
