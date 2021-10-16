@@ -92,11 +92,7 @@ function diceRoll2() {
             document.getElementById("roll-second").style.cssText = "background:#CFB5DA; cursor:not-allowed";
             document.getElementsByClassName("diceimage")[1].src = "image/winner.gif";
             document.getElementsByClassName("diceimage")[1].classList.add("win-right");
-            document.getElementById("winner-container").style.display = "flex"
-
-
-
-
+            document.getElementById("winner-container").style.display = "flex";
       };
 
 
@@ -119,7 +115,7 @@ function playSamePlayer() {
       document.getElementsByClassName("diceimage")[1].classList.remove("win-right");
       document.getElementById("roll-firt").style.background = "#9C060C";
       document.getElementById("roll-second").style.background = "#9C060C";
-      document.getElementById("roll-firt").disabled = false; //
+      document.getElementById("roll-firt").disabled = false;
       document.getElementById("roll-second").disabled = false;
       document.getElementById("roll-firt").style.cursor = "pointer";
       document.getElementById("roll-second").style.cursor = "pointer";
@@ -140,8 +136,3 @@ function playNewPlayer() {
 
 }
 
-
-function same() {
-
-      document.getElementById("winner-container").style.display = "none";
-}
