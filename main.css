@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 :root {
 
-      --bg-mobile:#e1f1f6;
-      --main-blue:#f3b0b3;
+      --bg-mobile:#20b3e0;
+      --main-blue:#0f0f0f;
       --main-black:#3b3a30;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 
-/*****=====Uerinput layought desktop****======*/
+/*****===== userinput layought desktop****======*/
 
 .container{
 
@@ -33,8 +33,7 @@ body {
       margin:  5vh  auto 2vh auto;
       display: flex;
       background-color: #fff;
-
-
+      border-radius: 5px;
 }
 
 .container .left{
