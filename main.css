@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 :root {
 
-      --bg-mobile:#20b3e0;
-      --main-blue:#0f0f0f;
+      --bg-mobile:#5F9DF7;
+      --main-blue:#1746A2;
       --main-black:#3b3a30;
 }
 
@@ -16,8 +16,7 @@
 
 
 body {
-      background-color: #D9AFD9;
-      background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 80%);
+      background-image: linear-gradient(to right, #5F9DF7, #B4CDE6);
       width: 100%;
       height: 100%;
 }
@@ -30,10 +29,10 @@ body {
       width: 50vw;
       height: 70vh;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      margin:  5vh  auto 2vh auto;
       display: flex;
       background-color: #fff;
       border-radius: 5px;
+      margin: 10px auto; /* Make the dive in center*/
 }
 
 .container .left{
@@ -45,7 +44,7 @@ body {
       position: absolute;
       top:40%;
       right: 40%;
-      font-size: 5rem;
+      font-size: 6rem;
       color:#fff;
 }
 
@@ -73,7 +72,12 @@ body {
 }
 
 .right-icon .fas , h1 {
-      color: #9cd6e1;
+      color: var(--main-black);
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 40px;
+      margin-top: 1rem;
+
 }
 
 
@@ -83,9 +87,9 @@ body {
       width: 80%;
       justify-content: center;
       align-items: center;
-      border: 1px solid var(--main-blue);
+      border: 1px solid var(--main-black);
       border-radius: 5px;
-      background-color:#9cd6e1;;
+ 
       
 }
 
@@ -95,36 +99,20 @@ body {
       border-radius: 0  5px 5px 0;
       border: none;
       overflow: hidden;
-      
-      /* font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1; */
-     
+      cursor: pointer;
+      padding: 5px;     
 }
 
-.input-container input:focus{
-      outline: none;
-      background-color: #e2e2e2;
-      border: 1xp solid #9cd6e1;
-      
 
-}
 
 .input-container input {
-      color: #9cd6e1;
       text-align: center;
       font-weight: bold;
       letter-spacing:1.5px;
 }
 
 
- .right .right-icon .fas {
-  color:#9cd6e1;
-  font-size: 50px;
-  margin-bottom: 25px;
-}
+
 
 .input-container .fas  {
       color: #fff;
@@ -132,7 +120,7 @@ body {
 }
 
 .right input[type="submit"] {
-     background-color:#9cd6e1;
+     background-color:var(--main-blue);
       color: #fff;
       border:none;
       padding: 12px;
@@ -140,12 +128,13 @@ body {
       border-radius: .5rem;
       width: 80%;
       cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
 }
 
 .right input[type="submit"]:hover{
-      background-color:#F3B0B3      ;
+      background-color:#000     ;
 }
-
 
 
 ::placeholder {
@@ -166,14 +155,17 @@ body {
 
 .left-one{
    
-     background-color:rgb(224, 224, 194); 
+     background-color:var(--main-blue); 
      box-shadow:2px 0 rgb(224, 224,194) ; 
      position: relative;
+     color: #fff;
 } 
 
-.left-one .playerName,
+.left-one .playerName{
+      text-transform: uppercase;
+}
 .right-two .playerName{
-   color: #9C060C;
+   color:var(--main-blue);
    text-transform: uppercase;
 }
 
@@ -193,14 +185,14 @@ body {
       height: 2.5rem;
       border:none;
       font-weight: bolder;
-      background-color: #9C060C;
+      background-color: var(--bg-mobile);
       color: #fff;
       border-radius: 1rem;
       cursor: pointer;
 }
 
 .roll:hover{
-      background-color: #9e373a;    
+      background-color: #000;    
       color: #fff;
 }
 
@@ -257,15 +249,17 @@ body {
 .winner-container button{
       width: 30%;
       height: 40%;
-      background-color: #9C060C;
+      background-color: var(--main-blue);
       color: #fff;
       border: none;
-      border-radius: 1rem;
+     border-radius: 5px;
       cursor: pointer;
+      font-size: 1rem;
+
 }
 
 .winner-container button:hover{
-      background-color: #CFB5DA;
+      background-color: #000;
 }
 
 
@@ -298,7 +292,7 @@ body {
 
 footer{
   height:8vh;
-  background-color:#e9a8e9; 
+  background-color:var(--main-blue); 
   font-size: 15px;
   color: #FFF;
   margin-bottom: 0;  
